@@ -1,3 +1,3 @@
-FROM registry.access.redhat.com/jboss-eap-6/eap-openshift:6.4
+FROM registry.access.redhat.com/jboss-eap-6/eap-openshift:6.3
 EXPOSE 8080 8888
-RUN curl https://raw.githubusercontent.com/tayterz/ticket-monster/ticket-monster.war -o $JBOSS_HOME/standalone/deployments/ticket-monster.war
+RUN curl https://raw.githubusercontent.com/tayterz/ticket-monster/ROOT.war -o $JBOSS_HOME/standalone/deployments/ROOT.war
